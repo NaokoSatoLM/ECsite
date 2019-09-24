@@ -1,0 +1,115 @@
+@charset"utf-8";
+
+h1{
+    background:black;
+    color:white;
+    margin-bottom:1px;
+}
+
+body{
+    margin:0;
+    background-image:url("商品写真/background.jpg");
+    background-size:auto;
+    background-position:right center;
+}
+
+nav{
+    border-top:8px  #55565a;
+    background:#101111;
+}
+nav ul{
+    overflow:hidden;
+    list-style:none;
+    margin:0 auto;
+    padding:0;
+    max-width:1000px;
+}
+nav li{
+    box-sizing:border-box;
+    float:left;
+    border-right:1px solid #34589e;
+    width:20%;
+}
+nav li:last-child{
+    border-right:none;
+}
+nav li a{
+    display:block;
+    padding:20px 0;
+    width:100%;
+    text-decoration:none;
+    text-align:center;
+    font-size:14px;
+    color:#ffffff;
+}
+nav li a:hover{
+    background:#cbced3;
+}
+
+.img.heel1{
+    width:200px;
+    height: 200px;
+}
+
+.item{
+    height:200px;
+   }
+
+.img{
+    background-color:none; 
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:10px;
+    height:600px;
+}
+.item-contents{
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+
+.heel{
+    height: 50%;
+}
+
+.item-contents li{
+    float:left;
+    /* margin-right:1%; 
+    border:1px solid #dadada;
+    margin-bottom:5px; */
+    width:calc(100% / 3);
+    font-size: 10px;
+    color:white;
+    background:rgb(3, 42, 75);
+}  
+.item-contents li:last-child{
+    margin-right:0;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

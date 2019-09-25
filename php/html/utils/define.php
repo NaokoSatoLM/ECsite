@@ -42,19 +42,21 @@ array(
     array('width' => '2%', 'label' => 'action'),
     array('width' => '10%', 'label' => 'number'),
     array('width' => '10%', 'label' => 'type'),
-    array('width' => '30%', 'label' => 'about'),
+    array('width' => '20%', 'label' => 'about'),
     array('width' => '5%', 'label' => 'maker'),
     array('width' => '5%', 'label' => 'cost'),
-    array('width' => '5%', 'label' => 'selling_price')
+    array('width' => '5%', 'label' => 'selling_price'),
+    array('width' => '10%', 'label' => 'img')
     );
 
     const ITEM_TABLE_HEADER_CREATE =
 array(
     array('width' => '10%', 'label' => 'number'),
     array('width' => '10%', 'label' => 'type'),
-    array('width' => '30%', 'label' => 'about'),
+    array('width' => '20%', 'label' => 'about'),
     array('width' => '5%', 'label' => 'maker'),
     array('width' => '5%', 'label' => 'cost'),
-    array('width' => '5%', 'label' => 'selling_price')
+    array('width' => '5%', 'label' => 'selling_price'),
+    array('width' => '10%', 'label' => 'img')
     );
 ?>

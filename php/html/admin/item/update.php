@@ -20,7 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             items.about,
             items.maker,
             items.cost,
-            items.selling_price
+            items.selling_price,
+            items.img
         FROM
             items
         WHERE
@@ -52,6 +53,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             <td>
                  <input type="text" name="selling_price" value="{$row['selling_price']}" />
              </td>
+             <td>
+                <input type="text" name="img" value="{$row['img']}" /> 
+                <img src="/admin/item/{$row['img']}" class="heel" width="60%">
+                //今ある画像を消してかえれるようにする
+             </td>
         </tr>
         HTML;
     }
@@ -78,7 +84,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         about = '{$_POST['about']}',
         maker= '{$_POST['maker']}',
         cost = '{$_POST['cost']}',
-        selling_price = '{$_POST['selling_price']}'
+        selling_price = '{$_POST['selling_price']}',
+        img = '{$_POST['img']}'
     WHERE
         items.id = {$_POST['id']}
     EOT;

@@ -13,8 +13,7 @@ class Render
                 <meta charset="utf-8">
                 <mata name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0"
                 <meta http-equiv="content-type" content="text/html";charaser="utf-8">
-                <!-- <link rel="stylesheet" href="stylesheet-list.css"
-                type="text/css"></link> -->
+                <!-- <linK rel="stylesheet" href="create_style_sheet.css" type="text/css"></link> -->
                 <meta name="kyeword" content="">
                 <meta name="description" content="">
                 <title>{$this->title}</title>

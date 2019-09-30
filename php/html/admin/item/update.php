@@ -54,9 +54,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                  <input type="text" name="selling_price" value="{$row['selling_price']}" />
              </td>
              <td>
-                <input type="text" name="img" value="{$row['img']}" /> 
-                <img src="/admin/item/{$row['img']}" class="heel" width="60%">
-                //今ある画像を消してかえれるようにする
+                <input type="text" name="img" value="{$row['img']}" />
+                <input type="file" name="heel_file" size="30" />
+                
+                
              </td>
         </tr>
         HTML;

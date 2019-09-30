@@ -20,7 +20,8 @@ method_prohibit('POST');
         items.about,
         items.maker,
         items.cost,
-        items.selling_price
+        items.selling_price,
+        img
     FROM
         items
     WHERE
@@ -73,11 +74,13 @@ while ($row = $result->fetch_assoc()){
         <td>{$row['maker']}</td>
         <td>{$row['cost']}</td>
         <td>{$row['selling_price']}</td>
-        
+        <td><img src="/admin/item/{$row['img']}" class="heel" width="60%"><br> 
+            {$row['img']}</td>
+        </td>
     </tr>
     HTML;
 }
-
+//'<img src="',$row['img'],'"class="heel">';
 $table = renderTable(ITEM_TABLE_HEADER,$tbody);
 
 $render->body = $title . $search . $create . $table;$render->renderHTML() ;   

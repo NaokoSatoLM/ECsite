@@ -17,7 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             items.about,
             items.maker,
             items.cost,
-            items.selling_price
+            items.selling_price,
+            items.img
         FROM
             items
         WHERE
@@ -40,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
             <td>{$row['maker']}</td>
             <td>{$row['cost']}</td>
             <td>{$row['selling_price']}</td>
+            <td>{$row['img']}</td>
         </tr>
         HTML;
     }
